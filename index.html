@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GoodDeeds — Support</title>
+  <meta name="description" content="Official support page for the GoodDeeds app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1429;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --brand1:#27c24a;
+      --brand2:#12a4e6;
+      --radius:18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(18,164,230,.18), transparent 60%),
+                  radial-gradient(1000px 700px at 110% 10%, rgba(39,194,74,.18), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header{
+      max-width:980px; margin:48px auto 24px; padding:0 20px;
+      display:flex; align-items:center; gap:18px;
+    }
+    header img{width:64px; height:64px; border-radius:20%; box-shadow:var(--shadow)}
+    h1{font-size: clamp(26px, 3vw, 34px); margin:0 0 4px}
+    .tag{color:var(--muted); font-weight:500}
+    .container{max-width:980px; margin:0 auto 60px; padding:0 20px; display:grid; gap:20px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));
+      border:1px solid rgba(148,163,184,.18);
+      border-radius:var(--radius);
+      padding:22px 22px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .grid{display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));}
+    h2{font-size: clamp(18px, 2.2vw, 22px); margin:0 0 10px}
+    a{color:#7dd3fc; text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn{
+      display:inline-block; padding:10px 16px; border-radius:12px; font-weight:600;
+      background: linear-gradient(135deg, var(--brand2), var(--brand1));
+      color:white; box-shadow: var(--shadow);
+    }
+    .footer{color:var(--muted); font-size:14px; text-align:center; margin:28px 0}
+    .pill{
+      display:inline-block; padding:6px 10px; border:1px solid rgba(148,163,184,.25);
+      border-radius:999px; color:var(--muted); font-size:12px; margin-right:6px;
+    }
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background:#0b1222;
+         border:1px solid rgba(148,163,184,.25); border-radius:6px; padding:2px 6px}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/icon.png" alt="GoodDeeds app icon" />
+    <div>
+      <h1>GoodDeeds — Support</h1>
+      <div class="tag">Help, contact, and legal info for the GoodDeeds iOS &amp; Apple Watch app.</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Need help?</h2>
+      <p>We’re here for you. If something isn’t working or you have a question, email us and we’ll reply as soon as possible.</p>
+      <p><a class="btn" href="mailto:minamemisevic86@gmail.com">Email Support</a></p>
+      <p class="pill">Average response: 48h</p>
+      <p class="pill">Version 1.0</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>About GoodDeeds</h2>
+        <p>GoodDeeds helps you build a daily habit of kindness. Complete a few simple good deeds each day and track your streak.</p>
+      </div>
+
+      <div class="card">
+        <h2>FAQ</h2>
+        <p><strong>How many deeds per day?</strong> You can choose your preferred count in Settings.</p>
+        <p><strong>Sync with Apple Watch?</strong> Yes — the app syncs your daily deeds between iPhone and Apple Watch.</p>
+        <p><strong>Data & privacy?</strong> We store minimal data and don’t sell personal information. See Privacy Policy below.</p>
+      </div>
+
+      <div class="card">
+        <h2>Privacy Policy</h2>
+        <p>We only collect what’s necessary to operate the app and improve your experience. No personal data is sold. For support-related communication, we’ll use your email solely to resolve your request.</p>
+        <p>Contact <a href="mailto:minamemisevic86@gmail.com">minamemisevic86@gmail.com</a> with any privacy questions.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>App Info</h2>
+      <p><strong>Bundle ID:</strong> <span class="kbd">com.gooddeeds.social</span></p>
+      <p><strong>Platform:</strong> iOS &amp; watchOS</p>
+      <p><strong>Support Email:</strong> <a href="mailto:minamemisevic86@gmail.com">minamemisevic86@gmail.com</a></p>
+    </section>
+  </main>
+
+  <div class="footer">
+    © <span id="y"></span> GoodDeeds. All rights reserved.
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
