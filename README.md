@@ -1,12 +1,12 @@
-# gooddeeds-support
+# Kindness Tracker App
 support doing the good deeds
 
-GoodDeeds App
+Kindness Tracker App
 =============
 
 Overview
 --------
-GoodDeeds is a simple and engaging iOS and Apple Watch app that encourages you to perform daily good deeds. 
+Kidness Tracker is a simple and engaging iOS and Apple Watch app that encourages you to perform daily good deeds. 
 Track your progress, snooze tasks you can’t complete right away, and celebrate when you finish your daily list.
 
 Features
@@ -26,7 +26,7 @@ Email: minamemisevic86@gmail.com
 
 Privacy
 -------
-GoodDeeds does not collect personal information beyond what is required for app functionality.
+Kindness Tracker does not collect personal information beyond what is required for app functionality.
 For full details, see the Privacy Policy: [LINK TO PRIVACY POLICY]
 
 Developer
